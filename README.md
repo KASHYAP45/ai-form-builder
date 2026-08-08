@@ -6,19 +6,6 @@ The application allows administrators to create forms manually, generate forms u
 
 ---
 
-## Live Demo
-
-**Demo URL:** Add your deployed URL here
-
-**Demo credentials:**
-
-Email: Add demo email here  
-Password: Add demo password here
-
-> If authentication is not configured, remove this section.
-
----
-
 ## GitHub Repository
 
 https://github.com/KASHYAP45/ai-form-builder

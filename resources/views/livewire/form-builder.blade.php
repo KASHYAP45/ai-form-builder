@@ -13,15 +13,7 @@
     </div>
 
     <div class="card-body">
-@if($aiLoading)
 
-    <div wire:poll.2s="checkAIGenerationStatus">
-        <div class="alert alert-info">
-            {{ $aiStatus }}
-        </div>
-    </div>
-
-@endif
 @if($publicUrl)
 
     <div class="alert alert-success mt-4 ai-conatiner-style" >
@@ -143,7 +135,7 @@
     type="button"
     class="btn btn-dark"
     wire:click="generateWithAI"
-    wire:loading.attr="disabled"
+    wire:loading.attr=""
 >
 
     <span wire:loading.remove wire:target="generateWithAI">
@@ -847,7 +839,7 @@
                                         class="form-control"
                                         placeholder="{{ $field['placeholder'] }}"
                                         value="{{ $field['default'] }}"
-                                        disabled
+                                        
                                     >
 
                                     @break
@@ -859,7 +851,7 @@
                                         class="form-control"
                                         placeholder="{{ $field['placeholder'] }}"
                                         rows="3"
-                                        disabled
+                                        
                                     >{{ $field['default'] }}</textarea>
 
                                     @break
@@ -873,7 +865,7 @@
                                         class="form-control"
                                         placeholder="{{ $field['placeholder'] }}"
                                         value="{{ $field['default'] }}"
-                                        disabled
+                                        
                                     >
 
                                     @break
@@ -887,7 +879,7 @@
                                         class="form-control"
                                         placeholder="{{ $field['placeholder'] }}"
                                         value="{{ $field['default'] }}"
-                                        disabled
+                                        
                                     >
 
                                     @break
@@ -901,7 +893,7 @@
                                         class="form-control"
                                         placeholder="{{ $field['placeholder'] }}"
                                         value="{{ $field['default'] }}"
-                                        disabled
+                                        
                                     >
 
                                     @break
@@ -914,7 +906,7 @@
                                         type="date"
                                         class="form-control"
                                         value="{{ $field['default'] }}"
-                                        disabled
+                                        
                                     >
 
                                     @break
@@ -926,7 +918,7 @@
                                     <input
                                         type="file"
                                         class="form-control"
-                                        disabled
+                                        
                                     >
 
                                     @break
@@ -937,7 +929,7 @@
 
                                     <select
                                         class="form-select"
-                                        disabled
+                                        
                                     >
 
                                         <option value="">
@@ -968,7 +960,7 @@
                                                 type="radio"
                                                 class="form-check-input"
                                                 name="radio_{{ $field['id'] }}"
-                                                disabled
+                                                
                                             >
 
                                             <label class="form-check-label">
@@ -992,7 +984,7 @@
                                             <input
                                                 type="checkbox"
                                                 class="form-check-input"
-                                                disabled
+                                                
                                             >
 
                                             <label class="form-check-label">
@@ -1104,7 +1096,7 @@
                 type="button"
                 class="btn btn-success"
                 wire:click="saveForm"
-                wire:loading.attr="disabled"
+                wire:loading.attr=""
             >
 
                 <span wire:loading.remove wire:target="saveForm">

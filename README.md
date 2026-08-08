@@ -88,3 +88,29 @@ Example:
 
 ```text
 /forms/{form_id}
+
+## Screenshots
+
+### 1. AI Form Builder
+![Screenshot 1 - AI Form Builder](screenshots/01-form-builder.png)
+
+### 2. AI Form Generator
+![Screenshot 2 - AI Form Generator](screenshots/02-ai-generator.png)
+
+### 3. AI Generated Form
+![Screenshot 3 - AI Generated Form](screenshots/03-generated-form.png)
+
+### 4. Field Configuration
+![Screenshot 4 - Field Configuration](screenshots/04-field-configuration.png)
+
+### 5. Validation Rules
+![Screenshot 5 - Validation Rules](screenshots/05-validation-rules.png)
+
+### 6. Sections / Steps
+![Screenshot 6 - Sections / Steps](screenshots/06-sections.png)
+
+### 7. Live Preview
+![Screenshot 7 - Live Preview](screenshots/07-live-preview.png)
+
+### 8. Public Form
+![Screenshot 8 - Public Form](screenshots/08-public-form.png)

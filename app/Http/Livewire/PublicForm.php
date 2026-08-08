@@ -20,6 +20,10 @@ class PublicForm extends Component
             ->where('status', 'draft')
             ->firstOrFail();
     }
+    /**
+     * The render method returns the view for the public form component.
+     * @return \Illuminate\View\View
+     */
     public function render()
     {
         return view('livewire.public-form');

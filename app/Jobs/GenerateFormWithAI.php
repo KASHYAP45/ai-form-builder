@@ -16,10 +16,19 @@ class GenerateFormWithAI implements ShouldQueue
     use Queueable;
     use SerializesModels;
 
+    /**
+     * Create a new job instance.
+     * @param int $generationId
+     */
     public function __construct(
         public int $generationId
     ) {}
 
+    /**
+     * Execute the job.
+     * @return void
+     * @throws \Exception
+     */
     public function handle(): void
     {
         $generation = AiGeneration::findOrFail(
@@ -69,6 +78,11 @@ class GenerateFormWithAI implements ShouldQueue
             }
         }
     }
+    /**
+     * The normalizeSchema method takes a form schema array as input and ensures that each field in the schema has all the required properties. It assigns default values to missing properties, such as generating unique IDs for fields, setting placeholders, help texts, default values, required flags, options, section IDs, and validation rules. The method returns the normalized schema array.
+     * @param array $schema The form schema to be normalized.
+     * @return array The normalized form schema.
+     */
     private function normalizeSchema(array $schema): array
     {
         foreach ($schema['fields'] as $index => $field) {

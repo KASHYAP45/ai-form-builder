@@ -18,7 +18,7 @@
 	<link rel="icon" href="https://malinmartnes.no/wp-content/uploads/2026/01/ai-builder-icon.png" type="image/x-icon"/>
 
 	<!-- Title -->
-	<title>{{isset($title) ? $title : 'Form'}}</title>
+	<title>{{isset($title) ? $title : 'Form Builder'}}</title>
 
 	@include('includes.css')
 <style>

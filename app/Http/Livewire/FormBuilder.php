@@ -521,6 +521,10 @@ class FormBuilder extends Component
             );
         }
     }
+    /**
+     * The checkAIGenerationStatus method checks the status of an AI form generation process. It retrieves the generation record from the database using the aiGenerationId, and based on the status (pending, processing, failed, or completed), it updates the aiStatus message and handles the generated form data if completed.
+     * @return void
+     */
     public function checkAIGenerationStatus()
     {
         if (!$this->aiGenerationId) {
@@ -654,6 +658,10 @@ class FormBuilder extends Component
             );
         }
     }
+    /**
+     * The generateWithAI method initiates the AI form generation process. It validates the AI prompt, creates a new AiGeneration record with a pending status, and dispatches a job to generate the form based on the provided prompt. The method also updates the component's state to indicate that the generation is in progress.
+     * @return void
+     */
     public function generateWithAI()
     {
         $this->validate([
